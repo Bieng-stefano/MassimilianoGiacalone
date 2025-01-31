@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+    <title>Liuteria Giacalone</title>
+    <meta name="Description" content="Laboratorio di liuteria di Massimiliano Giacalone">
+    <meta name="author" content="Stefano Dell'Olio">
+    <meta charset="UTF-8">
+    <link href="../CSS/reset.css" rel="stylesheet">
+    <link href="../CSS/stile_contatti.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fe98b229d4.js" crossorigin="anonymous"></script>
+<body>
+    <div class="corpo">
+        <div class="navbar">
+            <h1 class="logo">Liuteria Giacalone</h1>  
+                <nav>
+                    <ul id="menuList">
+                        <li><a href="index_homepage.html">HOMEPAGE</a></li>
+                        <li><a href="index_strumenti.html">STRUMENTI</a></li>
+                        <li><a href="index_comelavoro.html">COME LAVORO</a></li>
+                        <li><a href="index_location.html">LOCATION</a></li>
+                        <li><a href="index_contatti.html">CONTATTI</a></li>
+                    </ul>
+                </nav>
+            <img src="../menu_icon.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+        <div class="contatti_testo">
+            <h1 class="titolo_contatti">CONTATTI</h1>
+            <p class="nome_testo">Massimiliano Michele Giacalone</p>
+                <p>Tel. 392 341 0400<br><br>
+                Email: massimilianogiacalone99@gmail.com</p>
+        </div>
+        <div class="foto_contatti">
+            <img src="../foto_contatti/foto_contatti_1.png">
+            <img src="../foto_contatti/foto_contatti_2.png">
+            <img src="../foto_contatti/foto_contatti_3.png">
+        </div>
+
+    </div>
+
+
+        <div class="footer">
+            <div class="wrapper">
+                <a href="https://www.facebook.com/massimiliano.giacalone.5">
+                 <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/liuteria_giacalone/">
+                 <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <div class="footer-text">
+                <p class="footer-info">CONTATTI<br>tel. 392 341 0400<br>
+                    email: massimilianogiacalone99@gmail.com</p>
+        </div>
+
+    <script>
+
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "500px";
+            }
+        else
+            {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
+
+
+</body>
+</head>

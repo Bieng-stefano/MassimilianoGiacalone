@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liuteria Giacalone</title>
+    <meta name="Description" content="Laboratorio di liuteria di Massimiliano Giacalone">
+    <meta name="author" content="Stefano Dell'Olio">
+    <meta charset="UTF-8">
+    <link href="../CSS/reset.css" rel="stylesheet">
+    <link href="../CSS/stile_homepage.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fe98b229d4.js" crossorigin="anonymous"></script>
+<body>
+    <div class="corpo">
+        <div class="navbar">
+            <h1 class="logo">Liuteria Giacalone</h1>  
+                <nav>
+                    <ul id="menuList">
+                        <li><a href="index_homepage.html">HOMEPAGE</a></li>
+                        <li><a href="index_strumenti.html">STRUMENTI</a></li>
+                        <li><a href="index_comelavoro.html">COME LAVORO</a></li>
+                        <li><a href="index_location.html">LOCATION</a></li>
+                        <li><a href="index_contatti.html">CONTATTI</a></li>
+                    </ul>
+                </nav>
+            <img src="../menu_icon.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+        <div class="video-container">
+            <video loop autoplay muted src="../video_homepage.mov" width="1500"></video>
+        </div>
+
+        <div class="video-container-mobile">
+            <video class="video-mobile" autoplay muted src="../video_homepage_mobile.mov" width="1500"></video>
+        </div>
+
+        <div class="about-me">
+            <h1 class="titolo-about-me" id="titolo-about-me">MASSIMILIANO MICHELE GIACALONE</h1>
+            <h2 class="citazione">"Essere un liutaio, per me, vuol dire produrre arte. È incredibile pensare a come una persona possa creare musica da uno strumento creato dalle mie mani. È come creare il pennello che servirà per dipingere la Gioconda".</h2><br><br>
+            <p class="testo-bio">Diplomato alla scuola di liuteria di Cremona nel 2018, inizia a lavorare per i grandi maestri artigiani come apprendista. Scopre le tecniche e i materiali di pregio, di cui ne farà tesoro per la creazione dei suoi strumenti. 
+                Lavora per il primo periodo a Cremona presso alcune botteghe di liuteria, celebri nella città, ma la sua vocazione lo spinge verso l’artisticità di Venezia, culla di arte e fonte di ispirazione per il suo lavoro. Si trasferisce così nel 2022, aprendo la sua bottega in uno storico palazzo veneziano situato nel cuore della città galleggiante, e da lì la sua mente e le sue mani lavorano per la realizzazione di strumenti quali violini e viole.<br><br>
+                Ancora oggi si impegna per la progettazione e la creazione di violini ispirati al grande liutaio Stradivari, tanto da averne fatta una vera e propria filosofia. La sua precisione è meticolosa e ogni strumento è perfettamente bilanciato e misurato per permettere alla melodia di scorrere armoniosa e leggiadra. 
+            </p>
+        </div>
+        <div class="foto-bio">
+            <img src="../foto-bio.png" class="fotografia-bio"> 
+        </div>
+    </div>
+
+        <div class="footer">
+            <div class="wrapper">
+                <a href="https://www.facebook.com/massimiliano.giacalone.5">
+                 <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/liuteria_giacalone/">
+                 <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <div class="footer-text">
+                <p class="footer-info">CONTATTI<br>tel. 392 341 0400<br>
+                    email: massimilianogiacalone99@gmail.com</p>
+        </div>
+
+    </div>
+
+    <script>
+
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "500px";
+            }
+        else
+            {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
+
+
+</body>
+</head>
+</html>

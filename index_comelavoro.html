@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+    <title>Liuteria Giacalone</title>
+    <meta name="Description" content="Laboratorio di liuteria di Massimiliano Giacalone">
+    <meta name="author" content="Stefano Dell'Olio">
+    <meta charset="UTF-8">
+    <link href="../CSS/reset.css" rel="stylesheet">
+    <link href="../CSS/stile_comelavoro.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fe98b229d4.js" crossorigin="anonymous"></script>
+<body>
+    <div class="corpo">
+        <div class="navbar">
+            <h1 class="logo">Liuteria Giacalone</h1>  
+                <nav>
+                    <ul id="menuList">
+                        <li><a href="index_homepage.html">HOMEPAGE</a></li>
+                        <li><a href="index_strumenti.html">STRUMENTI</a></li>
+                        <li><a href="index_comelavoro.html">COME LAVORO</a></li>
+                        <li><a href="index_location.html">LOCATION</a></li>
+                        <li><a href="index_contatti.html">CONTATTI</a></li>
+                    </ul>
+                </nav>
+            <img src="../menu_icon.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+        <div class="contenitore_video">
+            <video controls src="../video_max.mp4" width="1300"></video>
+        </div>
+
+        <div class="testo-video">
+            <h1 class="titolo-come-lavoro">IL PROCESSO LAVORATIVO</h1>
+            <p class="testo-come-lavoro">
+                Nel video è in corso un restauro di una vecchia viola. Il proprietario ha richiesto un'abbassamento della tastiera, con annessa verniciatura su punti nascosti. E infine in fondo è stato rifatto il rifilo danneggiato dall'usura dello strumento. Come si può notare dal video, il processo, per quanto il cliente abbia richiesto poche modifiche, porta via molto tempo. Ma è un lavoro di precisione, di pazienza e di perfezione, in quanto nulla deve essere modificato nelle misure e nella forma.<br><br> 
+                Il video del restauro mostra in sostanza, il metodo, la cura, e l'orgoglio che mostro nel mio lavoro tutti i giorni. Nella costruzione dei miei violini c'è la stessa emozione e gli stessi obiettivi che porto avanti da quando ho iniziato a lavorare nell'ambito della liuteria. 
+            <p>
+        </div>
+
+    </div>
+
+
+        <div class="footer">
+            <div class="wrapper">
+                <a href="https://www.facebook.com/massimiliano.giacalone.5">
+                 <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/liuteria_giacalone/">
+                 <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <div class="footer-text">
+                <p class="footer-info">CONTATTI<br>tel. 392 341 0400<br>
+                    email: massimilianogiacalone99@gmail.com</p>
+        </div>
+
+    <script>
+
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "500px";
+            }
+        else
+            {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
+
+
+</body>
+</head>

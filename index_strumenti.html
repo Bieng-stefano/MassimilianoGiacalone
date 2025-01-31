@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+    <title>Liuteria Giacalone</title>
+    <meta name="Description" content="Laboratorio di liuteria di Massimiliano Giacalone">
+    <meta name="author" content="Stefano Dell'Olio">
+    <meta charset="UTF-8">
+    <link href="../CSS/reset.css" rel="stylesheet">
+    <link href="../CSS/stile_strumenti.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fe98b229d4.js" crossorigin="anonymous"></script>
+<body>
+    <div class="corpo">
+        <div class="navbar">
+            <h1 class="logo">Liuteria Giacalone</h1>  
+                <nav>
+                    <ul id="menuList">
+                        <li><a href="index_homepage.html">HOMEPAGE</a></li>
+                        <li><a href="index_strumenti.html">STRUMENTI</a></li>
+                        <li><a href="index_comelavoro.html">COME LAVORO</a></li>
+                        <li><a href="index_location.html">LOCATION</a></li>
+                        <li><a href="index_contatti.html">CONTATTI</a></li>
+                    </ul>
+                </nav>
+            <img src="../menu_icon.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+    <div class="container">
+        <div class="wrapper_foto">
+            <div class="wrapper-holder">
+                <div id="slider-img-1"></div>
+                <div id="slider-img-2"></div>
+                <div id="slider-img-3"></div>
+                <div id="slider-img-4"></div>
+            </div>
+        </div>
+        <div class="button-holder">
+            <a href="#slider-img-1" class="button"></a>
+            <a href="#slider-img-2" class="button"></a>
+            <a href="#slider-img-3" class="button"></a>
+            <a href="#slider-img-4" class="button"></a>
+        </div>
+    </div>
+
+    <div class="articolo-attrezzi">
+        <h1>GLI ATTREZZI</h1>
+        <p class="articolo-attrezzi-testo">Per la corretta lavorazione dei miei strumenti occorrono specifici attrezzi in grado di soddisfare a pieno le geometrie, le misure, ma soprattutto le esigenze del cliente. Ogni violino è minuziosamente costruito secondo delle specifiche misure e il legno deve essere lavorato al millimetro. Per questo motivo gli strumenti che posseggo devono essere di altissima qualità e soprattutto efficienti per una maggiore precisione.<br><br>
+            Gli attrezzi variano dallo scalpello per la preparazione scultorea dello strumento e per la fuoriuscita delle forme, fino alla levigatrice per una maggiore lisciatura del legno. Le vernici delicate che donano allo strumento un effetto di lucentezza e di pregio degno dei miei lavori.</p>
+    </div>
+    <div class="articolo-strumenti">
+            <h1>GLI STRUMENTI</h1>
+            <p class="articolo-strumenti-testo">
+                Ogni strumento che produco è realizzato 100% a mano e con precisa cura. All'interno di ogni violino o viola prodotta è presente un'etichetta che riporta il nome del liutaio, il luogo nel quale è stata prodotta e l'anno di inizio produzione. Tutto è realizzato in ogni minimo dettaglio, dalla costruzione alla verniciatura.<br><br> Il mio stile si avvicina molto al famoso liutaio Antonio Stradivari, riconoscibile per il suo famoso ricciolo all'apice dello strumento. Ma mi distinguo per la forma più stretta ed ergonomica ed una impugnatura spessa per una impugnatura più salda. Insomma, i miei strumenti sono una garanzia! 
+            </p>
+    </div>
+    <div class="foto-viola">
+        <img src="../foto_strumenti/foto-viola.jpeg" class="foto-viola-foto" alt="foto di una viola">
+    </div>
+    <div class="articolo-strumenti-mobile">
+        <h1>GLI STRUMENTI</h1>
+        <p class="articolo-strumenti-testo-mobile">
+            Ogni strumento che produco è realizzato 100% a mano e con precisa cura. All'interno di ogni violino o viola prodotta è presente un'etichetta che riporta il nome del liutaio, il luogo nel quale è stata prodotta e l'anno di inizio produzione. Tutto è realizzato in ogni minimo dettaglio, dalla costruzione alla verniciatura.<br><br> Il mio stile si avvicina molto al famoso liutaio Antonio Stradivari, riconoscibile per il suo famoso ricciolo all'apice dello strumento. Ma mi distinguo per la forma più stretta ed ergonomica ed una impugnatura spessa per una impugnatura più salda. Insomma, i miei strumenti sono una garanzia! 
+        </p>
+    </div>
+
+    </div>
+
+        <div class="footer">
+            <div class="wrapper">
+                <a href="https://www.facebook.com/massimiliano.giacalone.5">
+                 <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/liuteria_giacalone/">
+                 <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <div class="footer-text">
+                <p class="footer-info">CONTATTI<br>tel. 392 341 0400<br>
+                    email: massimilianogiacalone99@gmail.com</p>
+        </div>
+
+    <script>
+
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "500px";
+            }
+        else
+            {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
+
+
+</body>
+</head>

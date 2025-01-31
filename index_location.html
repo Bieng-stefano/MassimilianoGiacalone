@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+    <title>Liuteria Giacalone</title>
+    <meta name="Description" content="Laboratorio di liuteria di Massimiliano Giacalone">
+    <meta name="author" content="Stefano Dell'Olio">
+    <meta charset="UTF-8">
+    <link href="../CSS/reset.css" rel="stylesheet">
+    <link href="../CSS/stile_location.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fe98b229d4.js" crossorigin="anonymous"></script>
+<body>
+    <div class="corpo">
+        <div class="navbar">
+            <h1 class="logo">Liuteria Giacalone</h1>  
+                <nav>
+                    <ul id="menuList">
+                        <li><a href="index_homepage.html">HOMEPAGE</a></li>
+                        <li><a href="index_strumenti.html">STRUMENTI</a></li>
+                        <li><a href="index_comelavoro.html">COME LAVORO</a></li>
+                        <li><a href="index_location.html">LOCATION</a></li>
+                        <li><a href="index_contatti.html">CONTATTI</a></li>
+                    </ul>
+                </nav>
+            <img src="../menu_icon.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+        <div class="contenitore_testo">
+            <img src="../foto-location.png" alt="Image" class="foto_casa">
+            <div class="testo">
+            <h1 class="titolo">LOCATION</h1>
+            <p>
+                Nonostante i miei anni di lavoro a Cremona, ho deciso di aprire uno studio di liuteria proprio nel cuore di Venezia. Quest'ultima è risultata la culla perfetta per la costruzione dei miei strumenti. Un'isola galleggiante piena di storia e di cultura, il luogo ideale per produrre opere d'arte musicale.<br><br> 
+                Lo studio si trova in calle Fondamenta del Megio - 1755, dove è situato un palazzo storico datato 1600 nel quale al suo interno alloggiano molteplici studi di avvocati, notai e dottori. Una volta entrati si visualizza subito il laboratorio, situato al pian terreno nella porta vicino le scale che portano al primo piano. Vi basterà suonare il campanello alla porta o direttamente al citofono presente fuori il portone principale del palazzo. Siete tutti i benvenuti e io sarò pronto sempre ad accogliere le vostre richieste!
+            </p>
+            <h1 class="titolo-arrivo">COME ARRIVARE</h1>
+            <p>
+                Prendere il vaporetto per la fermata di San Stae. Successivamente percorrere dritto fino al bar Majer. Svoltare a destra fino al ponte e successivamente girare a sinistra e poi a destra. All’arrivo c’è un ponte che porta esattamente sulla via del laboratorio alla propria destra.
+            </p>
+            </div>
+        </div>
+
+        <div class="mappa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5598.84283067966!2d12.325887175726836!3d45.44116343497624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb1c38cf93311%3A0xf809efdc29d5d8f8!2sFondamenta%20del%20Megio%2C%201755%2C%2030135%20Venezia%20VE!5e0!3m2!1sit!2sit!4v1716628803083!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </div>
+
+
+        <div class="footer">
+            <div class="wrapper">
+                <a href="https://www.facebook.com/massimiliano.giacalone.5">
+                 <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/liuteria_giacalone/">
+                 <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <div class="footer-text">
+                <p class="footer-info">CONTATTI<br>tel. 392 341 0400<br>
+                    email: massimilianogiacalone99@gmail.com</p>
+        </div>
+
+    <script>
+
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "500px";
+            }
+        else
+            {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
+
+
+</body>
+</head>
